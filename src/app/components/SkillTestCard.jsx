@@ -23,16 +23,11 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
 
       <h1 className="text-xl font-semibold text-gray-800 mt-11">Skill Test</h1>
       <div className="">
-        {/* Heading */}
-
-        {/* Skill Card */}
         <div className="flex flex-col md:flex-row items-center bg-white px-2 py-8 rounded-lg border border-gray-300 mt-4  w-full max-w-3xl mx-auto">
-          {/* Icon */}
           <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
             <img src="./html_1.png" alt="HTML5 Logo" className="w-16 h-16" />
           </div>
 
-          {/* Test Details */}
           <div className="flex-grow text-center md:text-left">
             <h2 className="text-lg text-black font-semibold">{testName || "Hyper Text Markup Language"}</h2>
             <p className="text-gray-600 text-sm mt-1">
@@ -42,13 +37,11 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
             </p>
           </div>
 
-          {/* Update Button */}
           <button className="bg-blue-900 text-white px-4 py-2 rounded-md text-sm mt-4 md:mt-0 cursor-pointer" onClick={() => setModal(true)}>
             Update
           </button>
         </div>
 
-        {/* Modal */}
         {modal && (
           <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50 p-4">
             <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md md:max-w-lg">
@@ -60,7 +53,7 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
               </div>
 
               <form onSubmit={saved}>
-                {/* Rank */}
+         
                 <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 mb-8">
                   <div className="flex items-center">
                     <div className="w-6 h-6 mr-4 flex items-center justify-center rounded-full bg-blue-900 text-white font-bold text-sm">
@@ -80,15 +73,12 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
                       onChange={(e) => setRank(e.target.value)}
                     />
 
-                    {/* Validation Message (Appears Below Input) */}
                     {(!rank || isNaN(rank)) && (
                       <p className="text-red-500 text-sm mt-1">required | should be a number</p>
                     )}
                   </div>
                 </div>
 
-
-                {/* Percentile */}
                 <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 mt-4 mb-8">
                   <div className="flex items-center">
                     <div className="w-6 h-6 mr-4 flex items-center justify-center rounded-full bg-blue-900 text-white font-bold text-sm">
@@ -108,15 +98,12 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
                       onChange={(e) => setPercentile(e.target.value)}
                     />
 
-                    {/* Validation Message (Appears Below Input) */}
                     {(!percentile || isNaN(percentile)) && (
                       <p className="text-red-500 text-sm mt-1">required | percentile 0-100</p>
                     )}
                   </div>
                 </div>
 
-
-                {/* Score */}
                 <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0 md:space-x-4 mt-4">
                   <div className="flex items-center">
                     <div className="w-7.5 h-6.5 mr-4 flex items-center justify-center rounded-full bg-blue-900 text-white font-bold text-sm">
@@ -135,8 +122,6 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
                   />
                 </div>
 
-
-                {/* Buttons */}
                 <div className="flex justify-end space-x-2 pt-4">
                   <button type="button" className="cursor-pointer font-bold  text-blue-900 px-2 mr-6 border-1 border-blue-900 py-2 rounded-md" onClick={() => setModal(false)}>
                     cancel

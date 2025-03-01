@@ -16,12 +16,9 @@ export default function SkillAnalysis() {
           <div key={topic.name} className="mb-6">
             <p className="text-md text-gray-600 mb-4">{topic.name}</p>
             <div className="flex flex-col sm:flex-row items-center sm:justify-between space-y-2 sm:space-y-0 mb-10">
-              {/* Progress Bar */}
               <div className="w-full sm:w-3/4 bg-gray-200 h-2 rounded overflow-hidden">
                 <div className={`${topic.color} h-2`} style={{ width: `${topic.score}%` }}></div>
               </div>
-              
-              {/* Score */}
               <p className={`text-sm font-bold ${topic.textColor}`}>{topic.score}%</p>
             </div>
           </div>

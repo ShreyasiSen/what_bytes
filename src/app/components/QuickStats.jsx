@@ -23,8 +23,6 @@ export default function QuickStats() {
   return (
     <div className="bg-white p-6 rounded-lg border border-gray-300 w-full max-w-3xl mx-auto ">
       <h2 className="text-lg font-bold text-black ">Quick Statistics</h2>
-
-      {/* Grid for Responsive Layout */}
       <div className="grid grid-cols-1 gap-2 xl:grid-cols-3">
         {stats.map((stat, index) => (
           <div
