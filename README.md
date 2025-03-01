@@ -1,5 +1,5 @@
 
-# **WhatBytes Internship Assignment** 🚀  
+# **WhatBytes Internship Assignment**   
 
 🔗 **Live Demo:** https://what-bytes-gray.vercel.app/
 
