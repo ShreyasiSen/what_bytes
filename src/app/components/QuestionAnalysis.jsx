@@ -32,9 +32,9 @@ export default function QuestionAnalysis() {
 
       <p className="text-gray-600 text-sm sm:text-md mb-10">
         <span className="font-extrabold text-gray-600">
-          You scored {correct} correct out of {totalQuestions}.
+          You scored {correct} question correct out of {totalQuestions}.
         </span>
-        However, there’s still room for improvement.
+        However,it still needs some improvement.
       </p>
       
       <div className="relative w-24 sm:w-32 h-24 sm:h-32 mx-auto mt-6 mb-20">

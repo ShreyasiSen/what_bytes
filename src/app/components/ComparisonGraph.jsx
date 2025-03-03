@@ -41,7 +41,7 @@ const ComparisonGraph = ({ p }) => {
             <p className="text-gray-600 text-sm md:text-md text-center md:text-left mt-2">
                 <span className="font-extrabold text-gray-600">You scored {percentile}% percentile</span>, which is
                 {percentile < averagePercentile ? " lower" : " higher"} than the <br />
-                average percentile <span className=" text-gray-600">{averagePercentile}%</span> of all engineers who took this assessment.
+                average percentile <span className=" text-gray-600">{averagePercentile}%</span> of all the engineers who took this assessment.
             </p>
 
             <div className="w-full h-52 md:h-60 lg:h-72 mt-4">
