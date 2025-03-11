@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 import { useBar } from "../../context/barContext";
 
-const ComparisonGraph = ({ p }) => {
+const ComparisonGraph = ({  }) => {
     const averagePercentile = 72;
     const { updateBar } = useBar();
     const [percentile, setPercentile] = useState(0);

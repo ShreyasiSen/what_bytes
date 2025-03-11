@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useBar } from "../../context/barContext";
 
-export default function SkillTestCard({ testName, questions, duration, date }) {
+export default function SkillTestCard({ }) {
   const [modal, setModal] = useState(false);
   const [rank, setRank] = useState('');
   const [percentile, setPercentile] = useState('');
@@ -29,10 +29,10 @@ export default function SkillTestCard({ testName, questions, duration, date }) {
           </div>
 
           <div className="flex-grow text-center md:text-left">
-            <h2 className="text-lg text-black font-semibold">{testName || "Hyper Text Markup Language"}</h2>
+            <h2 className="text-lg text-black font-semibold">{"Hyper Text Markup Language"}</h2>
             <p className="text-gray-600 text-sm mt-1">
-              <span className="font-medium">{questions}</span> Questions: 08 |{" "}
-              <span className="font-medium">Duration: 15{duration} mins</span> | Submitted on{" "}
+              <span className="font-medium"></span> Questions: 08 |{" "}
+              <span className="font-medium">Duration: 15 mins</span> | Submitted on{" "}
               <span className="font-medium">3rd March 2025</span>
             </p>
           </div>
